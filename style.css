@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@600&display=swap');
+
+body{
+    background-color: #09090a;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #0000005b;
+    position: fixed;
+}
+
+h1{
+    color: #ffffff;
+    position: relative;
+    top: 20px;
+    right: 90px;
+    padding: 10px;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+button{
+    display: flex;
+    border-radius: 5px;
+    height: 45px;
+    width: 170px;
+    padding: 10px;
+    border: 1px solid #8b5cf6;
+    background-color: transparent;
+    color: #ffffff;
+    position: relative;
+    top: 50px;
+    left: 500px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Sofia Sans', sans-serif;    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-color: #8b5cf6;
+}
+
+main{
+    width: 100%;
+    height: 605px;
+    background-color: #0000005b;
+    border-radius: 5px;
+    padding: 100px 40px 40px;
+}
+
+input{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+    border: 1px solid #8b5cf6;
+    background-color: #0000005b;
+}
+
+input:checked{
+    background-color:  #8b5cf6;
+    border: 2px solid #8b5cf6;
+}
+
+p{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+form{
+    display: flex;
+    padding: 95px 40px 40px;
+    width: fit-content;
+}
+
+.days{
+    display: flex;
+    margin-left: 32px;
+    gap: 48px;
+}
+
+.day{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.day div{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.habits{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 65px;
+}
+
+.habit{
+    width: 64px;
+    height: 64px;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+@media (max-width: 570px) {
+    main{
+        width: 100%;
+    }
+
+    button{
+        font-size: 20px;
+        width: 70px;
+        position: relative;
+        left: 10px;
+    }
+    button div{
+        display: none;
+    }
+}
